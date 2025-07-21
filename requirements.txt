@@ -3,3 +3,4 @@ uvicorn==0.34.0
 pillow==11.0.0
 python-multipart==0.0.20
 pytesseract==0.3.13
+opencv-python==4.11.0.86
