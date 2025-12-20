@@ -1,7 +1,15 @@
 services:
-  my-ocr:
-    image: alirezafazli29/fastapi-ocr:0.0.3
-    container_name: my-ocr 
+  my-ocr-tesseract:
+    image: ocr-app:dev
+    build:
+      path: .
+      dockerfile: Dockerfile
+    container_name: my-ocr-tesseract
     ports:
-      - "8002:7000"  
-    restart: unless-stopped 
+      - "8000:8080"
+    command: >
+      uvicorn app.api.routes-tesseract:app
+      --host 0.0.0.0
+      --port 8080
+      --workers 4
+    restart: unless-stopped

@@ -1,0 +1,19 @@
+.
+├── app
+│   ├── api
+│   │   ├── __init__.py
+│   │   ├── routes-deepseek.py
+│   │   ├── routes-tesseract.py
+│   │   └── schemas.py
+│   └── core
+│       ├── __init__.py
+│       ├── engine.py
+│       └── utils.py
+├── .dockerignore
+├── .gitignore
+├── dev.ipynb
+├── docker-compose.yml
+├── Dockerfile
+├── README.md
+├── requirements.txt
+└── structure.txt

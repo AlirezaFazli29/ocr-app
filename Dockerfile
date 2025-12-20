@@ -20,6 +20,6 @@ COPY requirements.txt /app
 RUN pip install --no-cache-dir -r requirements.txt
 RUN rm -fr requirements.txt
 
-EXPOSE 7000
+EXPOSE 8080
 
-CMD [ "python3", "main.py" ]
+CMD [ "bash" ]

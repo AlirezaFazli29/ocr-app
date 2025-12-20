@@ -2,7 +2,7 @@ from enum import Enum
 from pydantic import BaseModel
 
 
-class language(Enum):
+class Language(Enum):
     English = "eng"
     Spanish = "spa"
     Arabic = "ara"
