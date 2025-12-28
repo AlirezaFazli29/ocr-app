@@ -13,3 +13,6 @@ class Language(Enum):
 class OCRJsonRequest(BaseModel):
     base64_string: str
     language: str
+
+class OCRJsonRequestD(BaseModel):
+    base64_string: str

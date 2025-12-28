@@ -4,3 +4,9 @@ pillow==11.0.0
 python-multipart==0.0.20
 pytesseract==0.3.13
 opencv-python==4.11.0.86
+torch==2.6.0 --index-url https://download.pytorch.org/whl/cu126
+torchvision==0.21.0 --index-url https://download.pytorch.org/whl/cu126
+transformers==4.46.3
+einops==0.8.1
+addict==2.4.0
+easydict==1.13

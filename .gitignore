@@ -59,3 +59,7 @@ Thumbs.db
 
 # Ignore csv file
 *.csv
+
+# Ignore large files
+model-files/
+model-files

@@ -90,7 +90,6 @@ async def file_to_base64(
             "Tesseract Functions",
         ],
 )
-
 async def perform_ocr(
     file: UploadFile,
     language: Language = Form(Language.Farsi),

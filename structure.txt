@@ -7,8 +7,10 @@
 │   │   └── schemas.py
 │   └── core
 │       ├── __init__.py
-│       ├── engine.py
-│       └── utils.py
+│       ├── model-files
+│       │    ├── ...
+│       │    └── ...
+│       └── engine.py
 ├── .dockerignore
 ├── .gitignore
 ├── dev.ipynb
