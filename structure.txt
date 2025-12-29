@@ -7,15 +7,18 @@
 │   │   └── schemas.py
 │   └── core
 │       ├── __init__.py
-│       ├── model-files
-│       │    ├── ...
-│       │    └── ...
-│       └── engine.py
+│       ├── engine.py
+│       └── model-files
+│           ├── ...    
+│           └── ...
 ├── .dockerignore
 ├── .gitignore
 ├── dev.ipynb
 ├── docker-compose.yml
-├── Dockerfile
+├── Dockerfile-cpu
+├── Dockerfile-gpu
 ├── README.md
+├── requirements-cpu.txt
+├── requirements-gpu.txt
 ├── requirements.txt
 └── structure.txt
