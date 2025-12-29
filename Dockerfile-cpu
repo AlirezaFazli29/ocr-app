@@ -10,15 +10,16 @@ RUN apt-get update && apt-get install -y \
     tesseract-ocr-ara \
     tesseract-ocr-fra \
     tesseract-ocr-deu \
-    && rm -rf /var/lib/apt/lists/*
+    && rm -rf /var/lib/apt/lists/* /usr/share/doc/*
 
 WORKDIR /app
 
-COPY /app /app
-COPY requirements.txt /app
+COPY app/api app/api
+COPY requirements-cpu.txt /app
 
-RUN pip install --no-cache-dir -r requirements.txt
-RUN rm -fr requirements.txt
+RUN pip install --no-cache-dir -r requirements-cpu.txt
+RUN rm -fr requirements-cpu.txt && \
+    rm -fr app/api/routes-deepseek.py
 
 EXPOSE 8080
 

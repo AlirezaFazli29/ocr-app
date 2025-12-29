@@ -30,9 +30,7 @@ class DeepSeekOCR:
             image_pth: str,
     ):
         torch.cuda.empty_cache()
-        with tempfile.TemporaryDirectory(
-            delete=True
-        ) as tmpdir:
+        with tempfile.TemporaryDirectory() as tmpdir:
             _ = self.model.infer(
                 tokenizer=self.tokenizer,
                 prompt=self.prompt,
