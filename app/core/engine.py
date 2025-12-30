@@ -21,8 +21,9 @@ class DeepSeekOCR:
             model_path,
             trust_remote_code=True,
             use_safetensors=True,
+            torch_dtype=torch.bfloat16,
+            device_map="cuda",
         )
-        self.model.eval().to(torch.bfloat16).to("cuda")
         self.prompt = "<image>\n<|grounding|>Convert the document to markdown."
 
     def infer(

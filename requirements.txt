@@ -10,3 +10,4 @@ transformers==4.46.3
 einops==0.8.1
 addict==2.4.0
 easydict==1.13
+accelerate==1.12.0
